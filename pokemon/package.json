@@ -1,0 +1,20 @@
+{
+  "name": "pokemon",
+  "version": "1.0.0",
+  "description": "_⏰_ Time Estimation ~90 minutes",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "ejs": "^3.1.5",
+    "express": "^4.17.1",
+    "pg": "^8.4.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.5"
+  }
+}
