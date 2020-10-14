@@ -1,0 +1,17 @@
+[
+  {
+    "name": "fat pikachu",
+    "HP": 1,
+    "isFat": true
+  },
+  {
+    "name": "cool pikachu",
+    "HP": 0,
+    "isFat": true
+  },
+  {
+    "name": "hungry pikachu",
+    "HP": -3,
+    "isFat": false
+  }
+]

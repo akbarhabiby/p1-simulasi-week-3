@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>List All Pokemon</title>
+</head>
+<body>
+    <h1>List Pokemon</h1>
+    <a href="/pokemons/add">Add Pokemon</a>
+    <table border="1">
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Name</th>
+                <th>HP</th>
+                <th>Is Fat</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody>
+            <% data.forEach ( element => { %> 
+                <tr>
+                    <td><%= element.id %></td>
+                    <td>Mr. <%= element.name %></td>
+                    <td><%= element.HP %></td>
+                    <td><%= element.isFat %></td>
+                    <td><a href="/pokemons/edit/<%= element.id %>">Edit</a> | <a href="/pokemons/delete/<%= element.id %>">Delete</a></td>
+                </tr>
+            <% }) %> 
+        </tbody>
+    </table>
+</body>
+</html>

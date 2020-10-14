@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Pokemon</title>
+</head>
+<body>
+    <h1>Add Pokemon</h1>
+    <% if (error) { %>
+        <p>Error!: <%= error %> </p>
+    <% } %> 
+    <a href="/">Back to List Pokemon</a>
+    <form action="/pokemons/add" method="post">
+        <label for="">Name:</label>
+        <br>
+        <input type="text" name="name">
+        <br>
+        <label for="">HP</label>
+        <br>
+        <input type="number" name="HP">
+        <br>
+        <label for="">Is Fat?</label>
+        <br>
+        <select name="isFat">
+            <option value="">-- Please Select --</option>
+            <option value="true">True</option>
+            <option value="false">False</option>
+        </select>
+        <br>
+        <button type="submit">Create Pokemon</button>
+    </form>
+</body>
+</html>
